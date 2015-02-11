@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+  </head>
+  <body ng controller="TutorialController as cntrl">
+  <div class="list-group-item" ng-repeat="item in cntrl.items">
+  <div >{{item.title}}</div>
+  <div >{{item.author}}</div>
+  <div ><img src"{{item.image}}" width="90px" height="90px"/></div>
+  <div ><a href="{{item.url}}">Click here</a></div>
+  </body>
+</html>
